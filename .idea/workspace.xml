@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67e99ef8-372f-44e7-bc8b-0fc4aef5b77d" name="Default Changelist" comment="" />
+    <list default="true" id="67e99ef8-372f-44e7-bc8b-0fc4aef5b77d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/doriand/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/doriand/CommandHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/doriand/CommandHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/doriand/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/doriand/CommandHandlerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/doriand/CommandHandlerTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,13 +38,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2391" />
+          <entry key="java" value="2498" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2391" />
+          <entry key="JAVA" value="2498" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -49,31 +57,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/doriand/CommandHandlerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="432">
-                  <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/doriand/Clock.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/doriand/Message.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-10">
-                  <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#822#823#0" expanded="true" />
-                    <element signature="e#886#887#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="109">
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
                 </state>
               </provider>
             </entry>
@@ -85,41 +70,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="333">
-                  <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/doriand/UserRepository.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/doriand/User.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-                  <folding>
-                    <element signature="e#95#96#0" expanded="true" />
-                    <element signature="e#129#130#0" expanded="true" />
-                    <element signature="e#441#442#0" expanded="true" />
-                    <element signature="e#483#484#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/doriand/MessageRepository.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+                <state relative-caret-position="408">
+                  <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -134,6 +86,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -158,6 +113,7 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -227,7 +183,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535056022841" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535056525408" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -246,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CommandHandlerTest">
+  <component name="RunManager" selected="JUnit.CommandHandlerTest.post_message_to_wall">
     <configuration name="CommandHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoduranceTwitter" />
       <extension name="coverage">
@@ -257,6 +213,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="doriand" />
       <option name="MAIN_CLASS_NAME" value="doriand.CommandHandlerTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandHandlerTest.post_message_to_wall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoduranceTwitter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="doriand.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="doriand" />
+      <option name="MAIN_CLASS_NAME" value="doriand.CommandHandlerTest" />
+      <option name="METHOD_NAME" value="post_message_to_wall" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -297,9 +269,11 @@
       <item itemvalue="JUnit.CommandHandlerTest.post_message_to_wall_2" />
       <item itemvalue="JUnit.CommandHandlerTest.post_message_with_new_user" />
       <item itemvalue="JUnit.CommandHandlerTest" />
+      <item itemvalue="JUnit.CommandHandlerTest.post_message_to_wall" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommandHandlerTest.post_message_to_wall" />
         <item itemvalue="JUnit.CommandHandlerTest" />
         <item itemvalue="JUnit.CommandHandlerTest.post_message_with_new_user" />
         <item itemvalue="JUnit.CommandHandlerTest.post_message_to_wall_2" />
@@ -320,9 +294,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TweetHandlerTest_post_message_to_wall_2 - 2018.08.23 at 19h 55m 37s.xml">
-      <configuration name="TweetHandlerTest.post_message_to_wall_2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CommandHandlerTest_post_message_with_new_user - 2018.08.23 at 20h 13m 09s.xml">
       <configuration name="CommandHandlerTest.post_message_with_new_user" configurationId="JUnit" />
     </history-entry>
@@ -350,6 +321,9 @@
     <history-entry file="CommandHandlerTest - 2018.08.23 at 21h 02m 04s.xml">
       <configuration name="CommandHandlerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CommandHandlerTest_post_message_to_wall - 2018.08.23 at 21h 29m 56s.xml">
+      <configuration name="CommandHandlerTest.post_message_to_wall" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -363,7 +337,7 @@
       <window_info id="Learn" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17430703" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32936078" />
@@ -443,15 +417,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/doriand/CommandHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="109">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="408">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
         </state>
       </provider>
     </entry>

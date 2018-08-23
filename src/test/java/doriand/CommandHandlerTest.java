@@ -17,13 +17,15 @@ import java.util.Optional;
 public class CommandHandlerTest
 {
     Clock aClock;
-    private static final String MESSAGE = "Alice -> I love the weather today";
     private MessageRepository messageRepository;
     private CommandHandler commandHandler;
     private UserRepository userRepository;
 
+    private static final String MESSAGE = "Alice -> I love the weather today";
+
     @Before
     public void setUp() throws Exception {
+
         aClock = mock(Clock.class);
         messageRepository = mock(MessageRepository.class);
         userRepository = mock(UserRepository.class);
