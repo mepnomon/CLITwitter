@@ -3,9 +3,11 @@ package doriand;
 import java.util.Optional;
 
 public class CommandHandler {
+
     private MessageRepository messageRepository;
     private UserRepository userRepository;
     private Clock aClock;
+
 
     /**
      * Constructs a new CommandHandler
@@ -19,6 +21,8 @@ public class CommandHandler {
         this.userRepository = userRepository;
         this.aClock = aClock;
     }
+
+
 
     /**
      * Handles a user's message.
@@ -35,12 +39,22 @@ public class CommandHandler {
             userRepository.save(aUser);
         }
 
+        // get a msg for a user if the user exists and the msg body is empty
+        if(getMessage(message) == null){
+            messageRepository.getMessagesForUser(aUser);
+        } else {
+            saveMessageToRepo(aUser, message);
+        }
+    }
+
+
+    private void saveMessageToRepo(User aUser, String message){
         Message newMessage = new Message(aUser, getMessage(message), aClock.now());
         messageRepository.save(newMessage);
     }
 
     /*
-        
+
      */
     private String getUserName(String message){
         String[] splitMessage = message.split("->");
@@ -52,6 +66,10 @@ public class CommandHandler {
      */
     private String getMessage(String message){
         String[] splitMessage = message.split("->");
+
+        if(splitMessage.length < 2 ){
+            return null;
+        }
         return splitMessage[1].trim();
     }
 }
