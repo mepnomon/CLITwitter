@@ -11,7 +11,7 @@ public class MessageRepository {
 
     }
 
-    public List<String> getMessagesForUser(User aUser) {
+    public List<Message> getMessagesForUser(User aUser) {
 
         return null;
     }

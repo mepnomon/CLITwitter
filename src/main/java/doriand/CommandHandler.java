@@ -50,7 +50,7 @@ public class CommandHandler {
             case "wall":
                 System.out.println("not yet implemented");
                 break;
-            case "read":
+            case "timeline":
                 messageRepository.getMessagesForUser(aUser);
                 break;
             default:
@@ -77,9 +77,12 @@ public class CommandHandler {
             return "wall";
         }
         // get message for a user
-        return "read";
+        return "timeline";
     }
 
+    /*
+
+     */
     private void saveMessageToRepo(User aUser, String message){
         Message newMessage = new Message(aUser, getMessage(message), aClock.now());
         messageRepository.save(newMessage);
@@ -99,9 +102,9 @@ public class CommandHandler {
     private String getMessage(String message){
         String[] splitMessage = message.split("->");
 
-        if(splitMessage.length < 2 ){
-            return null;
-        }
+        //if(splitMessage.length < 2 ){
+        //    return null;
+        //}
         return splitMessage[1].trim();
     }
 }

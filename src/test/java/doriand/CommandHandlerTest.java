@@ -1,16 +1,12 @@
 package doriand;
 
-import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import net.bytebuddy.asm.Advice;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -60,9 +56,12 @@ public class CommandHandlerTest {
     @Test
     public void read_a_message_for_user(){
 
-        //LocalDateTime currentTime = LocalDateTime.now();
-        List<String> returnMessageList = new ArrayList<String>() {{add("I love the weather today");}};
+        LocalDateTime currentTime = LocalDateTime.now();
         User aUser = new User("Alice");
+
+        List<Message> returnMessageList = new ArrayList<Message>() {{add(
+                new Message(aUser, "I love the weather today",currentTime));}};
+
         when(userRepository.getUserByName("Alice")).thenReturn(Optional.of(aUser));
         when(messageRepository.getMessagesForUser(aUser)).thenReturn(returnMessageList);
         commandHandler.handle("Alice");
@@ -72,11 +71,12 @@ public class CommandHandlerTest {
     @Test
     public void read_two_messages_for_user(){
 
-        List<String> returnMessageList = new ArrayList<String>() {
-            {add("Good game though.");}
-            {add("Damn! We lost!");}
-        };
         User aUser = new User("Bob");
+        LocalDateTime currentTime = LocalDateTime.now();
+        List<Message> returnMessageList = new ArrayList<Message>() {
+            {add(new Message(aUser,"Good game though.", currentTime));}
+            {add(new Message(aUser,"Damn! We lost!", currentTime));}
+        };
         when(userRepository.getUserByName("Bob")).thenReturn(Optional.of(aUser));
         when(messageRepository.getMessagesForUser(aUser)).thenReturn(returnMessageList);
         commandHandler.handle("Bob");
@@ -85,6 +85,8 @@ public class CommandHandlerTest {
 
     @Test
     public void follow_users(){
+
+        commandHandler.handle("Charlie wall");
         Assert.fail("not yet implemented");
     }
 }
