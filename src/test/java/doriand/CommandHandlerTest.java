@@ -66,7 +66,6 @@ public class CommandHandlerTest {
         when(userRepository.getUserByName("Alice")).thenReturn(Optional.of(aUser));
         when(messageRepository.getMessagesForUser(aUser)).thenReturn(returnMessageList);
         commandHandler.handle("Alice");
-
         verify(messageRepository).getMessagesForUser(aUser);
     }
 
@@ -82,5 +81,10 @@ public class CommandHandlerTest {
         when(messageRepository.getMessagesForUser(aUser)).thenReturn(returnMessageList);
         commandHandler.handle("Bob");
         verify(messageRepository).getMessagesForUser(aUser);
+    }
+
+    @Test
+    public void follow_users(){
+        Assert.fail("not yet implemented");
     }
 }

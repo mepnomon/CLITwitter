@@ -4,11 +4,8 @@
     <list default="true" id="67e99ef8-372f-44e7-bc8b-0fc4aef5b77d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/doriand/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doriand/MessageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/doriand/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doriand/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/doriand/CommandHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/doriand/CommandHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/doriand/CommandHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/doriand/CommandHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/doriand/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/doriand/MessageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/doriand/CommandHandlerTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,63 +19,57 @@
     <session id="-2115102236">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="6" />
-          <entry key="java" value="19" />
+          <entry key="class" value="15" />
+          <entry key="java" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="19" />
+          <entry key="CLASS" value="15" />
+          <entry key="JAVA" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4102" />
+          <entry key="java" value="5116" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4102" />
+          <entry key="JAVA" value="5116" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5029051">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/doriand/CommandHandlerTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="261">
-                  <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+                <state relative-caret-position="-263">
+                  <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#2811#2812#0" expanded="true" />
+                    <element signature="e#2861#2862#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/doriand/MessageRepository.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -86,30 +77,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="365">
-                  <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/doriand/Clock.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/doriand/UserRepository.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+                <state relative-caret-position="17">
+                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
             </entry>
@@ -125,6 +98,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>wall</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -136,18 +114,18 @@
         <option value="$PROJECT_DIR$/src/main/java/doriand/TweetHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/doriand/TweetHandlerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/doriand/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/doriand/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/doriand/Clock.java" />
         <option value="$PROJECT_DIR$/src/main/java/doriand/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/doriand/MessageRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/doriand/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/doriand/CommandHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="206" />
-    <option name="y" value="-8" />
+    <option name="x" value="383" />
+    <option name="y" value="302" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -157,7 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -206,17 +183,31 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CoduranceTwitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoduranceTwitter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="doriand" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoduranceTwitter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535810603694" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535916634789" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -250,7 +241,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommandHandlerTest.post_message_with_new_user" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommandHandlerTest.post_message_to_wall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoduranceTwitter" />
       <extension name="coverage">
         <pattern>
@@ -260,7 +251,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="doriand" />
       <option name="MAIN_CLASS_NAME" value="doriand.CommandHandlerTest" />
-      <option name="METHOD_NAME" value="post_message_with_new_user" />
+      <option name="METHOD_NAME" value="post_message_to_wall" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -315,19 +306,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CommandHandlerTest.post_message_with_new_user" />
       <item itemvalue="JUnit.CommandHandlerTest" />
       <item itemvalue="JUnit.CommandHandlerTest.read_message_for_user" />
       <item itemvalue="JUnit.CommandHandlerTest.read_a_message_for_user" />
       <item itemvalue="JUnit.CommandHandlerTest.read_two_messages_for_user" />
+      <item itemvalue="JUnit.CommandHandlerTest.post_message_to_wall" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CommandHandlerTest" />
+        <item itemvalue="JUnit.CommandHandlerTest.post_message_to_wall" />
         <item itemvalue="JUnit.CommandHandlerTest.read_two_messages_for_user" />
         <item itemvalue="JUnit.CommandHandlerTest.read_a_message_for_user" />
         <item itemvalue="JUnit.CommandHandlerTest.read_message_for_user" />
-        <item itemvalue="JUnit.CommandHandlerTest.post_message_with_new_user" />
       </list>
     </recent_temporary>
   </component>
@@ -345,42 +336,51 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommandHandlerTest_read_message_for_user - 2018.09.01 at 14h 21m 39s.xml">
-      <configuration name="CommandHandlerTest.read_message_for_user" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandHandlerTest_read_message_for_user - 2018.09.01 at 14h 21m 53s.xml">
-      <configuration name="CommandHandlerTest.read_message_for_user" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandHandlerTest - 2018.09.01 at 14h 21m 57s.xml">
-      <configuration name="CommandHandlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandHandlerTest - 2018.09.01 at 14h 22m 20s.xml">
-      <configuration name="CommandHandlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandHandlerTest - 2018.09.01 at 14h 24m 13s.xml">
-      <configuration name="CommandHandlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandHandlerTest - 2018.09.01 at 14h 54m 49s.xml">
-      <configuration name="CommandHandlerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandHandlerTest_read_a_message_for_user - 2018.09.01 at 14h 58m 28s.xml">
-      <configuration name="CommandHandlerTest.read_a_message_for_user" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandHandlerTest_read_a_message_for_user - 2018.09.01 at 14h 58m 47s.xml">
-      <configuration name="CommandHandlerTest.read_a_message_for_user" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommandHandlerTest_read_two_messages_for_user - 2018.09.01 at 15h 00m 01s.xml">
-      <configuration name="CommandHandlerTest.read_two_messages_for_user" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CommandHandlerTest_read_two_messages_for_user - 2018.09.01 at 15h 00m 14s.xml">
       <configuration name="CommandHandlerTest.read_two_messages_for_user" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CommandHandlerTest - 2018.09.01 at 15h 03m 20s.xml">
+      <configuration name="CommandHandlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandHandlerTest - 2018.09.02 at 20h 08m 36s.xml">
+      <configuration name="CommandHandlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandHandlerTest_read_two_messages_for_user - 2018.09.02 at 20h 13m 18s.xml">
+      <configuration name="CommandHandlerTest.read_two_messages_for_user" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandHandlerTest_post_message_to_wall - 2018.09.02 at 20h 13m 53s.xml">
+      <configuration name="CommandHandlerTest.post_message_to_wall" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandHandlerTest - 2018.09.02 at 20h 14m 04s.xml">
+      <configuration name="CommandHandlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandHandlerTest - 2018.09.02 at 20h 14m 08s.xml">
+      <configuration name="CommandHandlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandHandlerTest - 2018.09.02 at 20h 15m 58s.xml">
+      <configuration name="CommandHandlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandHandlerTest - 2018.09.02 at 20h 16m 56s.xml">
+      <configuration name="CommandHandlerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommandHandlerTest - 2018.09.02 at 20h 17m 37s.xml">
+      <configuration name="CommandHandlerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -390,12 +390,12 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35211268" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35140997" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
@@ -420,13 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/doriand/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/doriand/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -434,45 +427,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/doriand/UserRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/doriand/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/doriand/Clock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -483,13 +441,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/doriand/Clock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/doriand/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/statements/RunBefores.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+          <folding>
+            <element signature="e#1904#1905#0" expanded="true" />
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="e#5134#5282#0" expanded="true" />
+            <element signature="e#5281#5282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#728#922#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/doriand/CommandHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+        <state relative-caret-position="-263">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2811#2812#0" expanded="true" />
+            <element signature="e#2861#2862#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

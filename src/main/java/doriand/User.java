@@ -3,10 +3,10 @@ package doriand;
 import java.util.Objects;
 
 public class User {
-    private String alice;
+    private String name;
 
-    public User(String alice) {
-        this.alice = alice;
+    public User(String name) {
+        this.name = name;
     }
 
     @Override
@@ -14,11 +14,11 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return Objects.equals(alice, user.alice);
+        return Objects.equals(name, user.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(alice);
+        return Objects.hash(name);
     }
 }

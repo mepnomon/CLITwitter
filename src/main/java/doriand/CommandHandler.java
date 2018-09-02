@@ -23,7 +23,6 @@ public class CommandHandler {
     }
 
 
-
     /**
      * Handles a user's message.
      * @param message
@@ -35,18 +34,51 @@ public class CommandHandler {
 
         User aUser = user.orElse(new User(name));
 
+        // if new user, save it
         if (!user.isPresent()) {
             userRepository.save(aUser);
         }
 
-        // get a msg for a user if the user exists and the msg body is empty
-        if(getMessage(message) == null){
-            messageRepository.getMessagesForUser(aUser);
-        } else {
-            saveMessageToRepo(aUser, message);
+        String command = extractCommand(message);
+        switch (command) {
+            case "post":
+                saveMessageToRepo(aUser, message);
+                break;
+            case "following":
+                System.out.println("not yet implemented");
+                break;
+            case "wall":
+                System.out.println("not yet implemented");
+                break;
+            case "read":
+                messageRepository.getMessagesForUser(aUser);
+                break;
+            default:
+                System.out.println("Command missing");
+                break;
         }
     }
 
+
+    /*
+
+     */
+    private String extractCommand(String message){
+
+        if(message.contains("->")){
+            return "post";
+        }
+
+        if(message.contains("follows")) {
+            return "following";
+        }
+
+        if(message.contains("wall")){
+            return "wall";
+        }
+        // get message for a user
+        return "read";
+    }
 
     private void saveMessageToRepo(User aUser, String message){
         Message newMessage = new Message(aUser, getMessage(message), aClock.now());
