@@ -7,7 +7,7 @@ public class CommandHandler {
     private MessageRepository messageRepository;
     private UserRepository userRepository;
     private Clock aClock;
-
+    private WallRepository wallRepository;
 
     /**
      * Constructs a new CommandHandler
@@ -15,11 +15,12 @@ public class CommandHandler {
      * @param userRepository
      * @param aClock
      */
-    public CommandHandler(MessageRepository messageRepository, UserRepository userRepository, Clock aClock) {
+    public CommandHandler(MessageRepository messageRepository, UserRepository userRepository, Clock aClock, WallRepository wallRepository) {
 
         this.messageRepository = messageRepository;
         this.userRepository = userRepository;
         this.aClock = aClock;
+        this.wallRepository = wallRepository;
     }
 
 
@@ -48,6 +49,7 @@ public class CommandHandler {
                 System.out.println("not yet implemented");
                 break;
             case "wall":
+                Wall aWall = getWallForUser(getUserName(message));
                 System.out.println("not yet implemented");
                 break;
             case "timeline":
@@ -92,8 +94,13 @@ public class CommandHandler {
 
      */
     private String getUserName(String message){
-        String[] splitMessage = message.split("->");
-        return splitMessage[0].trim();
+        String[] splitMessage;
+        if(message.contains("->")) {
+            splitMessage = message.split("->");
+            return splitMessage[0].trim();
+        }
+        splitMessage = message.split(" ");
+        return  splitMessage[0].trim();
     }
 
     /*
@@ -106,5 +113,9 @@ public class CommandHandler {
         //    return null;
         //}
         return splitMessage[1].trim();
+    }
+
+    private Wall getWallForUser(String username){
+        return wallRepository.getWallForUser(getUserName(username));
     }
 }

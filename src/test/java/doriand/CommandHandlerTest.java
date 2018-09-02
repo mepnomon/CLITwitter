@@ -21,6 +21,7 @@ public class CommandHandlerTest {
     private MessageRepository messageRepository;
     private CommandHandler commandHandler;
     private UserRepository userRepository;
+    private WallRepository wallRepository;
     private static final String MESSAGE = "Alice -> I love the weather today";
 
 
@@ -30,7 +31,8 @@ public class CommandHandlerTest {
         aClock = mock(Clock.class);
         messageRepository = mock(MessageRepository.class);
         userRepository = mock(UserRepository.class);
-        commandHandler = new CommandHandler(messageRepository, userRepository, aClock);
+        wallRepository = mock(WallRepository.class);
+        commandHandler = new CommandHandler(messageRepository, userRepository, aClock, wallRepository);
     }
 
     @Test
@@ -60,8 +62,8 @@ public class CommandHandlerTest {
         User aUser = new User("Alice");
 
         List<Message> returnMessageList = new ArrayList<Message>() {{add(
-                new Message(aUser, "I love the weather today",currentTime));}};
-
+                new Message(aUser, "I love the weather today",currentTime));}
+        };
         when(userRepository.getUserByName("Alice")).thenReturn(Optional.of(aUser));
         when(messageRepository.getMessagesForUser(aUser)).thenReturn(returnMessageList);
         commandHandler.handle("Alice");
@@ -71,8 +73,8 @@ public class CommandHandlerTest {
     @Test
     public void read_two_messages_for_user(){
 
-        User aUser = new User("Bob");
         LocalDateTime currentTime = LocalDateTime.now();
+        User aUser = new User("Bob");
         List<Message> returnMessageList = new ArrayList<Message>() {
             {add(new Message(aUser,"Good game though.", currentTime));}
             {add(new Message(aUser,"Damn! We lost!", currentTime));}
@@ -84,8 +86,18 @@ public class CommandHandlerTest {
     }
 
     @Test
-    public void follow_users(){
+    public void follow_users_and_view_wall(){
 
+        LocalDateTime currentTime = LocalDateTime.now();
+        User aUserCharlie = new User("Charlie");
+        User aUserAlice   = new User("Alice");
+        List<Message> returnMessageList = new ArrayList<Message>() {
+            {add(new Message(aUserAlice,"I love the weather today",currentTime));}
+        };
+        when(userRepository.getUserByName("Alice")).thenReturn(Optional.of(aUserAlice));
+        when(userRepository.getUserByName("Bob")).thenReturn(Optional.of(aUserCharlie));
+        commandHandler.handle("Charlie  -> I'm in New York today! Anyone want to have a coffee?");
+        when(wallRepository.getWallForUser("Charlie")).thenReturn(new Wall(aUserCharlie));
         commandHandler.handle("Charlie wall");
         Assert.fail("not yet implemented");
     }
