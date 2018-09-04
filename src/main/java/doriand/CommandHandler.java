@@ -46,10 +46,10 @@ public class CommandHandler {
                 break;
             case "following":
 
-                addUserToFollow(getUserName(message),getSecondaryUserName(message));
+                addUserToFollow(aUser,getSecondaryUserName(message));
                 break;
             case "wall":
-                Wall aWall = getWallForUser(getUserName(message));
+                Wall aWall = getWallForUser(aUser);
                 aWall.getUsersFollowed();
                 //return messages for users followed
                 break;
@@ -117,15 +117,15 @@ public class CommandHandler {
         return splitMessage[1].trim();
     }
 
-    private Wall getWallForUser(String username){
-        return wallRepository.getWallForUser(getUserName(username));
+    private Wall getWallForUser(User aUser){
+        return wallRepository.getWallForUser(aUser);
     }
 
-    private void addUserToFollow(String follower, String following){
+    private void addUserToFollow(User aUser, String following){
 
-        Wall aWall = wallRepository.getWallForUser(getUserName(follower));
+        Wall aWall = wallRepository.getWallForUser(aUser);
         Optional<User> userOptional = userRepository.getUserByName(following);
-        User aUser = userOptional.get();
-        aWall.addUsersToFollow(aUser);
+        User followedUser = userOptional.get();
+        aWall.addUsersToFollow(followedUser);
     }
 }

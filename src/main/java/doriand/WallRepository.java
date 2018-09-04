@@ -1,10 +1,30 @@
 package doriand;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
 public class WallRepository {
 
+    List<Wall> userWalls;
 
-    public Wall getWallForUser(String userName) {
+    public WallRepository() {
+        userWalls = new ArrayList<>();
+    }
 
-        return null;
+    public void addWall(Wall aWall){
+        userWalls.add(aWall);
+    }
+
+    public Wall getWallForUser(User aUser) {
+        Optional<Wall> optionalWall = filterUserWall(aUser);
+        return optionalWall.get();
+    }
+
+    private Optional<Wall> filterUserWall(User aUser){
+
+        return userWalls.stream()
+                .filter(wall -> wall.belongsTo(aUser))
+                .findFirst();
     }
 }

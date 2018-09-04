@@ -9,6 +9,16 @@ public class User {
         this.name = name;
     }
 
+    public String getUserName(){
+
+        return name;
+    }
+
+    public boolean isUser(User name){
+
+        return this.name.equals(name);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

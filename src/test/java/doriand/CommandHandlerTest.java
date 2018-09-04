@@ -98,9 +98,9 @@ public class CommandHandlerTest {
         when(userRepository.getUserByName("Alice")).thenReturn(Optional.of(aUserAlice));
         when(userRepository.getUserByName("Bob")).thenReturn(Optional.of(aUserBob));
         commandHandler.handle("Charlie  -> I'm in New York today! Anyone want to have a coffee?");
-        when(wallRepository.getWallForUser("Charlie")).thenReturn(aWall);
+        when(wallRepository.getWallForUser(aUserCharlie)).thenReturn(aWall);
         commandHandler.handle("Charlie wall");
-        verify(wallRepository).getWallForUser("Charlie");
+        verify(wallRepository).getWallForUser(aUserCharlie);
 }
 
     @Test
@@ -109,7 +109,7 @@ public class CommandHandlerTest {
         User aUserCharlie = new User("Charlie");
         User aUserBob = new User("Bob");
         when(userRepository.getUserByName("Charlie")).thenReturn(Optional.of(aUserCharlie));
-        when(wallRepository.getWallForUser("Charlie")).thenReturn(aWall);
+        when(wallRepository.getWallForUser(aUserCharlie)).thenReturn(aWall);
         when(userRepository.getUserByName("Bob")).thenReturn(Optional.of(aUserBob));
         commandHandler.handle("Charlie follows Bob");
         verify(aWall).addUsersToFollow(aUserBob);

@@ -15,7 +15,6 @@ public class MessageRepositoryTest {
 
     @Before
     public void setUp() throws Exception {
-
         messageRepository = new MessageRepository();
     }
 

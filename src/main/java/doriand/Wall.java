@@ -10,6 +10,10 @@ public class Wall {
         this.aUser = aUser;
     }
 
+    public boolean belongsTo(User aUser){
+        return aUser == this.aUser;
+    }
+
     public List<User> getUsersFollowed() {
             //should contain names of users a user is following
         return null;
