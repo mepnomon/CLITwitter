@@ -1,10 +1,21 @@
 package doriand;
 
+import java.util.List;
+
 public class Wall {
 
     private User aUser;
 
     public Wall(User aUser) {
         this.aUser = aUser;
+    }
+
+    public List<User> getUsersFollowed() {
+            //should contain names of users a user is following
+        return null;
+    }
+
+    public void addUsersToFollow(User aUser) {
+
     }
 }

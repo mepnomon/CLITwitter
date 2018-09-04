@@ -1,16 +1,12 @@
 package doriand;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import static org.mockito.Mockito.*;
 
 /**
  * Unit tests for the CommandHandler.
@@ -22,6 +18,7 @@ public class CommandHandlerTest {
     private CommandHandler commandHandler;
     private UserRepository userRepository;
     private WallRepository wallRepository;
+    private Wall aWall;
     private static final String MESSAGE = "Alice -> I love the weather today";
 
 
@@ -32,6 +29,7 @@ public class CommandHandlerTest {
         messageRepository = mock(MessageRepository.class);
         userRepository = mock(UserRepository.class);
         wallRepository = mock(WallRepository.class);
+        aWall = mock(Wall.class);
         commandHandler = new CommandHandler(messageRepository, userRepository, aClock, wallRepository);
     }
 
@@ -86,19 +84,34 @@ public class CommandHandlerTest {
     }
 
     @Test
-    public void follow_users_and_view_wall(){
+    public void get_wall_for_a_user(){
 
         LocalDateTime currentTime = LocalDateTime.now();
         User aUserCharlie = new User("Charlie");
-        User aUserAlice   = new User("Alice");
+        User aUserAlice = new User("Alice");
+        User aUserBob   = new User("Bob");
+
         List<Message> returnMessageList = new ArrayList<Message>() {
             {add(new Message(aUserAlice,"I love the weather today",currentTime));}
+            {add(new Message(aUserCharlie,"He don't surf",currentTime));}
         };
         when(userRepository.getUserByName("Alice")).thenReturn(Optional.of(aUserAlice));
-        when(userRepository.getUserByName("Bob")).thenReturn(Optional.of(aUserCharlie));
+        when(userRepository.getUserByName("Bob")).thenReturn(Optional.of(aUserBob));
         commandHandler.handle("Charlie  -> I'm in New York today! Anyone want to have a coffee?");
-        when(wallRepository.getWallForUser("Charlie")).thenReturn(new Wall(aUserCharlie));
+        when(wallRepository.getWallForUser("Charlie")).thenReturn(aWall);
         commandHandler.handle("Charlie wall");
-        Assert.fail("not yet implemented");
+        verify(wallRepository).getWallForUser("Charlie");
+}
+
+    @Test
+    public void charlie_follows_bob(){
+
+        User aUserCharlie = new User("Charlie");
+        User aUserBob = new User("Bob");
+        when(userRepository.getUserByName("Charlie")).thenReturn(Optional.of(aUserCharlie));
+        when(wallRepository.getWallForUser("Charlie")).thenReturn(aWall);
+        when(userRepository.getUserByName("Bob")).thenReturn(Optional.of(aUserBob));
+        commandHandler.handle("Charlie follows Bob");
+        verify(aWall).addUsersToFollow(aUserBob);
     }
 }

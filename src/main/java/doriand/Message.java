@@ -17,6 +17,11 @@ public class Message {
         this.currentTime = currentTime;
     }
 
+    public boolean belongsTo(User aUser){
+
+        return this.aUser == aUser;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

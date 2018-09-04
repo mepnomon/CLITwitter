@@ -34,33 +34,33 @@ public class CommandHandler {
         Optional<User> user = userRepository.getUserByName(name);
 
         User aUser = user.orElse(new User(name));
-
-        // if new user, save it
-        if (!user.isPresent()) {
-            userRepository.save(aUser);
-        }
-
+        //move into methods...
         String command = extractCommand(message);
         switch (command) {
             case "post":
+                //move into posting
+                if (!user.isPresent()) {
+                    userRepository.save(aUser);
+                }
                 saveMessageToRepo(aUser, message);
                 break;
             case "following":
-                System.out.println("not yet implemented");
+
+                addUserToFollow(getUserName(message),getSecondaryUserName(message));
                 break;
             case "wall":
                 Wall aWall = getWallForUser(getUserName(message));
-                System.out.println("not yet implemented");
+                aWall.getUsersFollowed();
+                //return messages for users followed
                 break;
             case "timeline":
                 messageRepository.getMessagesForUser(aUser);
                 break;
             default:
-                System.out.println("Command missing");
+                System.out.println("Invalid command.");
                 break;
         }
     }
-
 
     /*
 
@@ -100,7 +100,13 @@ public class CommandHandler {
             return splitMessage[0].trim();
         }
         splitMessage = message.split(" ");
-        return  splitMessage[0].trim();
+        return splitMessage[0].trim();
+    }
+
+    private String getSecondaryUserName(String message){
+        String [] splitMessage;
+        splitMessage = message.split(" ");
+        return splitMessage[2].trim();
     }
 
     /*
@@ -108,14 +114,18 @@ public class CommandHandler {
      */
     private String getMessage(String message){
         String[] splitMessage = message.split("->");
-
-        //if(splitMessage.length < 2 ){
-        //    return null;
-        //}
         return splitMessage[1].trim();
     }
 
     private Wall getWallForUser(String username){
         return wallRepository.getWallForUser(getUserName(username));
+    }
+
+    private void addUserToFollow(String follower, String following){
+
+        Wall aWall = wallRepository.getWallForUser(getUserName(follower));
+        Optional<User> userOptional = userRepository.getUserByName(following);
+        User aUser = userOptional.get();
+        aWall.addUsersToFollow(aUser);
     }
 }
