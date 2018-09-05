@@ -17,22 +17,8 @@ public class UserRepository {
     }
 
     public Optional<User> getUserByName(String name){
-        User aUser = new User(name);
-        Optional<User> returnVal = Optional.of(filterUser(aUser));
-        return returnVal;
-    }
-
-    public Optional<User> getUser(User aUser){
-        return Optional.of(filterUser(aUser));
-    }
-
-    private <Optional>User filterUser(User aUser){
-        User returnUser = null;
-        for(User u : userList){
-            if(u.getUserName().equals(aUser.getUserName())){
-                returnUser = u;
-            }
-        }
-        return returnUser;
+        return userList.stream()
+                .filter(user -> name.equals(user.getUserName()))
+                .findFirst();
     }
 }

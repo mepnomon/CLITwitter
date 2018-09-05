@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67e99ef8-372f-44e7-bc8b-0fc4aef5b77d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/doriand/UserRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/doriand/WallRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doriand/CommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/doriand/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doriand/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/doriand/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doriand/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/doriand/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doriand/Wall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/doriand/WallRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/doriand/WallRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/doriand/CommandHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/doriand/CommandHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/doriand/MessageRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/doriand/MessageRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/doriand/CommandHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/doriand/CommandHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/doriand/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/doriand/MessageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/doriand/Wall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/doriand/Wall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/doriand/WallRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/doriand/WallRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/doriand/CommandHandlerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/doriand/CommandHandlerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/doriand/MessageRepositoryTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/doriand/MessageRepositoryTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/doriand/MessageRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/doriand/MessageRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/doriand/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/doriand/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/doriand/UserRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/doriand/UserRepositoryTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,44 +19,46 @@
     <session id="-2115102236">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="23" />
+          <entry key="class" value="27" />
           <entry key="java" value="84" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="23" />
+          <entry key="CLASS" value="27" />
           <entry key="JAVA" value="84" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="13090" />
+          <entry key="java" value="13726" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13090" />
+          <entry key="JAVA" value="13726" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -82,10 +71,12 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/doriand/UserRepositoryTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="379">
-                  <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+                <state relative-caret-position="424">
+                  <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#748#749#0" expanded="true" />
+                    <element signature="e#826#827#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -94,7 +85,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/doriand/WallRepository.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
+                <state relative-caret-position="68">
                   <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -106,8 +97,8 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/doriand/User.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
@@ -120,17 +111,15 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/doriand/UserRepository.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+                <state relative-caret-position="272">
+                  <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#262#263#0" expanded="true" />
                     <element signature="e#297#298#0" expanded="true" />
-                    <element signature="e#491#492#0" expanded="true" />
-                    <element signature="e#544#545#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -193,8 +182,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="482" />
-    <option name="y" value="307" />
+    <option name="x" value="95" />
+    <option name="y" value="93" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -204,6 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,13 +261,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536104019085" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536150327786" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -308,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepositoryTest.get_no_user_by_name">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest">
     <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoduranceTwitter" />
       <extension name="coverage">
@@ -396,8 +385,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserRepositoryTest.get_no_user_by_name" />
         <item itemvalue="JUnit.UserRepositoryTest" />
+        <item itemvalue="JUnit.UserRepositoryTest.get_no_user_by_name" />
         <item itemvalue="JUnit.UserRepositoryTest.successfully_save_user_and_get_user_by_name" />
         <item itemvalue="JUnit.UserRepositoryTest.save_user_and_get_user_by_name" />
         <item itemvalue="JUnit.WallRepositoryTest.get_a_wall_for_a_user" />
@@ -418,35 +407,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserRepositoryTest_save_user_and_get_user_by_name - 2018.09.05 at 00h 11m 35s.xml">
-      <configuration name="UserRepositoryTest.save_user_and_get_user_by_name" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserRepositoryTest_save_user_and_get_user_by_name - 2018.09.05 at 00h 11m 40s.xml">
-      <configuration name="UserRepositoryTest.save_user_and_get_user_by_name" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserRepositoryTest_save_user_and_get_user_by_name - 2018.09.05 at 00h 13m 17s.xml">
-      <configuration name="UserRepositoryTest.save_user_and_get_user_by_name" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserRepositoryTest_successfully_save_user_and_get_user_by_name - 2018.09.05 at 00h 13m 48s.xml">
-      <configuration name="UserRepositoryTest.successfully_save_user_and_get_user_by_name" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserRepositoryTest_get_no_user_by_name - 2018.09.05 at 00h 17m 49s.xml">
+    <history-entry file="UserRepositoryTest_get_no_user_by_name - 2018.09.05 at 13h 06m 15s.xml">
       <configuration name="UserRepositoryTest.get_no_user_by_name" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserRepositoryTest_get_no_user_by_name - 2018.09.05 at 00h 18m 08s.xml">
+    <history-entry file="UserRepositoryTest_get_no_user_by_name - 2018.09.05 at 13h 07m 11s.xml">
       <configuration name="UserRepositoryTest.get_no_user_by_name" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserRepositoryTest_get_no_user_by_name - 2018.09.05 at 00h 19m 06s.xml">
+    <history-entry file="UserRepositoryTest_get_no_user_by_name - 2018.09.05 at 13h 08m 50s.xml">
       <configuration name="UserRepositoryTest.get_no_user_by_name" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserRepositoryTest_get_no_user_by_name - 2018.09.05 at 00h 19m 57s.xml">
+    <history-entry file="UserRepositoryTest_get_no_user_by_name - 2018.09.05 at 13h 17m 16s.xml">
       <configuration name="UserRepositoryTest.get_no_user_by_name" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserRepositoryTest - 2018.09.05 at 00h 24m 48s.xml">
+    <history-entry file="UserRepositoryTest - 2018.09.05 at 13h 17m 25s.xml">
       <configuration name="UserRepositoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserRepositoryTest_get_no_user_by_name - 2018.09.05 at 00h 28m 01s.xml">
+    <history-entry file="UserRepositoryTest_get_no_user_by_name - 2018.09.05 at 13h 18m 28s.xml">
       <configuration name="UserRepositoryTest.get_no_user_by_name" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRepositoryTest_get_no_user_by_name - 2018.09.05 at 13h 18m 38s.xml">
+      <configuration name="UserRepositoryTest.get_no_user_by_name" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRepositoryTest - 2018.09.05 at 13h 19m 09s.xml">
+      <configuration name="UserRepositoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRepositoryTest - 2018.09.05 at 13h 24m 00s.xml">
+      <configuration name="UserRepositoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRepositoryTest - 2018.09.05 at 13h 24m 13s.xml">
+      <configuration name="UserRepositoryTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -462,7 +451,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14072494" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14392324" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -472,7 +461,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34056398" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34056398" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -575,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="193" selection-start-line="193" selection-end-line="193" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="516">
@@ -607,12 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,16 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="5" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -682,32 +648,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-274">
           <caret line="107" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="e#3042#3043#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/doriand/WallRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="68">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/doriand/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -723,12 +672,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/doriand/UserRepositoryTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="238">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/doriand/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/doriand/UserRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
           </folding>
         </state>
       </provider>

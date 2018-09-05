@@ -23,13 +23,24 @@ public class UserRepositoryTest {
         userRepository.save(aUser);
         Optional<User> optionalUser = userRepository.getUserByName("Alice");
         User actualUser = optionalUser.get();
-        Assert.assertEquals(aUser,actualUser);
+        assertEquals(aUser,actualUser);
     }
 
     @Test
     public void get_no_user_by_name(){
-        //Optional<User> = Optional.ofNullable()
-        //Assert.assertThat(userRepository.getUserByName("Alice").isPresent(),null);
-        Assert.fail("not yet implemented");
+        assertFalse(userRepository.getUserByName("Alice").isPresent());
+    }
+
+    @Test
+    public void get_user_from_populated_user_list(){
+        User aUserAlice = new User("Alice");
+        User aUserBob = new User("Bob");
+        User aUserGuy = new User("Guybrush");
+        userRepository.save(aUserAlice);
+        userRepository.save(aUserBob);
+        userRepository.save(aUserGuy);
+        Optional<User> optionaUser = userRepository.getUserByName("Guybrush");
+        User actualUser = optionaUser.get();
+        assertEquals(aUserGuy,actualUser);
     }
 }
