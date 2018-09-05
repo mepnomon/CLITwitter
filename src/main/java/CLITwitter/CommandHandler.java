@@ -1,5 +1,7 @@
 package CLITwitter;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 public class CommandHandler {
@@ -8,6 +10,7 @@ public class CommandHandler {
     private UserRepository userRepository;
     private Clock aClock;
     private WallRepository wallRepository;
+    private MessagePrinter messagePrinter;
 
     /**
      * Constructs a new CommandHandler
@@ -15,12 +18,15 @@ public class CommandHandler {
      * @param userRepository
      * @param aClock
      */
-    public CommandHandler(MessageRepository messageRepository, UserRepository userRepository, Clock aClock, WallRepository wallRepository) {
+    public CommandHandler(MessageRepository messageRepository, UserRepository userRepository,
+                          Clock aClock, WallRepository wallRepository,
+                          MessagePrinter messagePrinter) {
 
         this.messageRepository = messageRepository;
         this.userRepository = userRepository;
         this.aClock = aClock;
         this.wallRepository = wallRepository;
+        this.messagePrinter = messagePrinter;
     }
 
 
@@ -47,12 +53,20 @@ public class CommandHandler {
                 addUserToFollow(aUser,getSecondaryUserName(message));
                 break;
             case "wall":
-                Wall aWall = getWallForUser(aUser);
-                aWall.isFollowing();
-                //return messages for users followed
+                Optional<Wall> optionalWall = getWallForUser(aUser);
+                if(getWallForUser(aUser).isPresent()){
+                    Wall aWall = optionalWall.get();
+                    List<User> userList = aWall.isFollowing();
+                    List<Message> messageList = messageRepository.getMessagesForUser(aUser);
+                    for (User user1 : userList) {
+                       messageList.addAll(messageRepository.getMessagesForUser(user1));
+                    }
+                    messagePrinter.printForWall(messageList);
+                }
+
                 break;
             case "timeline":
-                messageRepository.getMessagesForUser(aUser);
+                messagePrinter.printForTimeline(messageRepository.getMessagesForUser(aUser));
                 break;
             default:
                 System.out.println("Invalid command.");
@@ -115,15 +129,24 @@ public class CommandHandler {
         return splitMessage[1].trim();
     }
 
-    private Wall getWallForUser(User aUser){
+    private Optional<Wall> getWallForUser(User aUser){
         return wallRepository.getWallForUser(aUser);
     }
 
     private void addUserToFollow(User aUser, String following){
+        Wall aWall;
+        Optional<Wall> optionalWall = wallRepository.getWallForUser(aUser);
 
-        Wall aWall = wallRepository.getWallForUser(aUser);
+        if(!optionalWall.isPresent()){
+            aWall = new Wall(aUser);
+            wallRepository.addWall(aWall);
+        } else {
+            aWall = optionalWall.get();
+        }
+
         Optional<User> userOptional = userRepository.getUserByName(following);
         User followedUser = userOptional.get();
         aWall.addUsersToFollow(followedUser);
+
     }
 }

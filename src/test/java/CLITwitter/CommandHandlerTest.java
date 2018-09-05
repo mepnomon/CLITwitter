@@ -19,6 +19,7 @@ public class CommandHandlerTest {
     private UserRepository userRepository;
     private WallRepository wallRepository;
     private Wall aWall;
+    private MessagePrinter messagePrinter;
     private static final String MESSAGE = "Alice -> I love the weather today";
 
 
@@ -30,7 +31,8 @@ public class CommandHandlerTest {
         userRepository = mock(UserRepository.class);
         wallRepository = mock(WallRepository.class);
         aWall = mock(Wall.class);
-        commandHandler = new CommandHandler(messageRepository, userRepository, aClock, wallRepository);
+        messagePrinter = mock(MessagePrinter.class);
+        commandHandler = new CommandHandler(messageRepository, userRepository, aClock, wallRepository, messagePrinter);
     }
 
     @Test
@@ -98,7 +100,7 @@ public class CommandHandlerTest {
         when(userRepository.getUserByName("Alice")).thenReturn(Optional.of(aUserAlice));
         when(userRepository.getUserByName("Bob")).thenReturn(Optional.of(aUserBob));
         commandHandler.handle("Charlie  -> I'm in New York today! Anyone want to have a coffee?");
-        when(wallRepository.getWallForUser(aUserCharlie)).thenReturn(aWall);
+        when(wallRepository.getWallForUser(aUserCharlie)).thenReturn(Optional.of(aWall));
         commandHandler.handle("Charlie wall");
         verify(wallRepository).getWallForUser(aUserCharlie);
 }
@@ -109,7 +111,7 @@ public class CommandHandlerTest {
         User aUserCharlie = new User("Charlie");
         User aUserBob = new User("Bob");
         when(userRepository.getUserByName("Charlie")).thenReturn(Optional.of(aUserCharlie));
-        when(wallRepository.getWallForUser(aUserCharlie)).thenReturn(aWall);
+        when(wallRepository.getWallForUser(aUserCharlie)).thenReturn(Optional.of(aWall));
         when(userRepository.getUserByName("Bob")).thenReturn(Optional.of(aUserBob));
         commandHandler.handle("Charlie follows Bob");
         verify(aWall).addUsersToFollow(aUserBob);

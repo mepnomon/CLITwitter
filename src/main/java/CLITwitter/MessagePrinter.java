@@ -16,7 +16,7 @@ public class MessagePrinter {
     }
 
 
-    public void formatMessageForTimeline(List<Message> messageList){
+    public void printForTimeline(List<Message> messageList){
 
         messageList.sort(Comparator.comparing(Message::getPostTime).reversed());
         for (Message message : messageList) {
@@ -24,7 +24,7 @@ public class MessagePrinter {
         }
     }
 
-    public void formatMessageForWall(List<Message> messageList){
+    public void printForWall(List<Message> messageList){
         messageList.sort(Comparator.comparing(Message::getPostTime).reversed());
         for (Message message : messageList) {
             consoleHandler.printMessage(message.formatMessageForWall(aClock));

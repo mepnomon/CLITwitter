@@ -21,6 +21,6 @@ public class WallRepositoryTest {
         User aUser = new User("Alice");
         Wall aWall = new Wall(aUser);
         aWallRepository.addWall(aWall);
-        Assert.assertEquals(aWall,aWallRepository.getWallForUser(aUser));
+        Assert.assertEquals(aWall,aWallRepository.getWallForUser(aUser).get());
     }
 }

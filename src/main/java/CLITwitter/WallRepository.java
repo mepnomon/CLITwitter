@@ -16,9 +16,9 @@ public class WallRepository {
         userWalls.add(aWall);
     }
 
-    public Wall getWallForUser(User aUser) {
+    public Optional<Wall> getWallForUser(User aUser) {
         Optional<Wall> optionalWall = filterUserWall(aUser);
-        return optionalWall.get();
+        return optionalWall;
     }
 
     private Optional<Wall> filterUserWall(User aUser){

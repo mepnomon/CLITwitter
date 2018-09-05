@@ -1,6 +1,5 @@
 package CLITwitter;
 
-import net.bytebuddy.asm.Advice;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InOrder;
@@ -29,7 +28,7 @@ public class MessagePrinterTest {
         when(aClock.getTimeDifference(currentTime)).thenReturn("(5 minutes ago)");
         Message aMessage = new Message(aUser,messageText,currentTime);
         //messagePrinter.printMessages(asList(aMessage));
-        messagePrinter.formatMessageForTimeline(asList(aMessage));
+        messagePrinter.printForTimeline(asList(aMessage));
         verify(consoleHandler).printMessage("I love the weather today (5 minutes ago)");
     }
 
@@ -45,7 +44,7 @@ public class MessagePrinterTest {
         when(aClock.getTimeDifference(currentTimeMinutesAgo)).thenReturn("(5 minutes ago)");
         Message firstMessage = new Message(aUser, messageText1,currentTimeMinutesAgo);
         Message secondMessage = new Message(aUser, messageText2, currentTimeSecondsAgo);
-        messagePrinter.formatMessageForTimeline(asList(firstMessage, secondMessage));
+        messagePrinter.printForTimeline(asList(firstMessage, secondMessage));
         InOrder inOrder = inOrder(consoleHandler);
         inOrder.verify(consoleHandler).printMessage("Now it's raining (10 seconds ago)");
         inOrder.verify(consoleHandler).printMessage("I love the weather today (5 minutes ago)");
@@ -68,7 +67,7 @@ public class MessagePrinterTest {
         Message messageAlice = new Message(aUserAlice, messageTextAlice,timeAlice);
 
 
-        messagePrinter.formatMessageForWall(asList(messageCharlie, messageAlice));
+        messagePrinter.printForWall(asList(messageCharlie, messageAlice));
         InOrder inOrder = inOrder(consoleHandler);
         inOrder.verify(consoleHandler).printMessage("Alice - Now it's raining (10 seconds ago)");
         inOrder.verify(consoleHandler).printMessage("Charlie - I'm in new York Today! Anyone want to have a coffee? (5 minutes ago)");
