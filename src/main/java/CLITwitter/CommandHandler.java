@@ -48,7 +48,7 @@ public class CommandHandler {
                 break;
             case "wall":
                 Wall aWall = getWallForUser(aUser);
-                aWall.getUsersFollowed();
+                aWall.isFollowing();
                 //return messages for users followed
                 break;
             case "timeline":

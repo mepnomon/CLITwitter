@@ -8,18 +8,31 @@ public class Message {
 
     private final User aUser;
     private final String message;
-    private final LocalDateTime currentTime;
+    private final LocalDateTime postTime;
 
-    public Message(User aUser, String message, LocalDateTime currentTime) {
+    public Message(User aUser, String message, LocalDateTime postTime) {
 
         this.aUser = aUser;
         this.message = message;
-        this.currentTime = currentTime;
+        this.postTime = postTime;
     }
 
     public boolean belongsTo(User aUser){
 
         return this.aUser == aUser;
+    }
+
+    public String formatForTimeLine(Clock aClock){
+
+        return message + " " + aClock.getTimeDifference(postTime);
+    }
+    public String formatMessageForWall(Clock aClock) {
+        return aUser.getUserName() +" - " +  message + " " + aClock.getTimeDifference(postTime);
+    }
+
+
+    public LocalDateTime getPostTime(){
+        return postTime;
     }
 
     @Override
@@ -29,12 +42,12 @@ public class Message {
         Message message1 = (Message) o;
         return Objects.equals(aUser, message1.aUser) &&
                 Objects.equals(message, message1.message) &&
-                Objects.equals(currentTime, message1.currentTime);
+                Objects.equals(postTime, message1.postTime);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(aUser, message, currentTime);
+        return Objects.hash(aUser, message, postTime);
     }
 
     @Override
@@ -42,7 +55,7 @@ public class Message {
         return "Message{" +
                 "aUser=" + aUser +
                 ", message='" + message + '\'' +
-                ", currentTime=" + currentTime +
+                ", postTime=" + postTime +
                 '}';
     }
 }
