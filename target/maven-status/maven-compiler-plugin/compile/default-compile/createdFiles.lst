@@ -1,0 +1,11 @@
+CLITwitter\MessagePrinter.class
+CLITwitter\Clock.class
+CLITwitter\ConsoleHandler.class
+CLITwitter\Main.class
+CLITwitter\User.class
+CLITwitter\MessageRepository.class
+CLITwitter\WallRepository.class
+CLITwitter\CommandHandler.class
+CLITwitter\UserRepository.class
+CLITwitter\Message.class
+CLITwitter\Wall.class

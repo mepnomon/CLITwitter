@@ -27,7 +27,6 @@ public class MessagePrinterTest {
         String messageText = "I love the weather today";
         when(aClock.getTimeDifference(currentTime)).thenReturn("(5 minutes ago)");
         Message aMessage = new Message(aUser,messageText,currentTime);
-        //messagePrinter.printMessages(asList(aMessage));
         messagePrinter.printForTimeline(asList(aMessage));
         verify(consoleHandler).printMessage("I love the weather today (5 minutes ago)");
     }

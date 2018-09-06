@@ -16,6 +16,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         while(true){
+            System.out.print(">");
             String message = sc.nextLine();
             commandHandler.handle(message);
         }
