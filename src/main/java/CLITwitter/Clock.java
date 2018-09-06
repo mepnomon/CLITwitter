@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 
 /**
  * A Clock object
+ * Generates and returns time offsets.
  * @author Dorian Dressler
  */
 public class Clock {
@@ -47,7 +48,7 @@ public class Clock {
     }
 
     /*
-      Returns a formatted String for Day(s)/Hour(s)
+        Returns a formatted String for Day(s)/Hour(s)
      */
     private String formatHoursAndDays(Duration difference){
         String timeUnit;
