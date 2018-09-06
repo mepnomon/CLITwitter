@@ -99,7 +99,7 @@ public class CommandHandlerTest {
         commandHandler.handle("Charlie  -> I'm in New York today! Anyone want to have a coffee?");
         when(wallRepository.getWallForUser(aUserCharlie)).thenReturn(Optional.of(aWall));
         commandHandler.handle("Charlie wall");
-        verify(wallRepository).getWallForUser(aUserCharlie);
+        verify(wallRepository, atLeast(2)).getWallForUser(aUserCharlie);
 }
 
     @Test
