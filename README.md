@@ -4,8 +4,10 @@ How to use:
 1. Clone the Repository
 2. in the parent folder (with the pom.xml) type mvn clean
 3. Followed by mvn install
-2. Navigate to "YourFolder"\out\artifacts\CoduranceTwitter_jar in your terminal
-3. type java -jar CoduranceTwitter.jar
+4. Navigate to "YourFolder"\out\artifacts\CoduranceTwitter_jar in your terminal
+5. type java -jar CoduranceTwitter.jar
+6. Run your first command e.g.: Mepnomon -> I can't believe I'm tweeting in my command line
+
 
 Usage:
 The following four commands will allow you to use this application.
