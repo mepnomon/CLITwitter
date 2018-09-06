@@ -39,8 +39,8 @@ public class IntegrationTest {
         LocalDateTime currentTime = LocalDateTime.now();
         when(aClock.now()).thenReturn(currentTime);
         when(aClock.getTimeDifference(currentTime)).thenReturn("(0 seconds ago)");
-        String message = "Alice -> I totally hate this weather and fuck you.";
-        String returnMessage = "I totally hate this weather and fuck you. (0 seconds ago)";
+        String message = "Alice -> I love the weather today.";
+        String returnMessage = "I love the weather today. (0 seconds ago)";
         commandHandler.handle(message);
         commandHandler.handle("Alice");
         verify(consoleHandler).printMessage(returnMessage);

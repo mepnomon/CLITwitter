@@ -1,9 +1,13 @@
 package CLITwitter;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * A command handler.
+ * Extracts posts and messages from a user's message
+ * @author Dorian Dressler
+ */
 public class CommandHandler {
 
     private MessageRepository messageRepository;
@@ -43,27 +47,16 @@ public class CommandHandler {
         String command = extractCommand(message);
         switch (command) {
             case "post":
-                //move into posting
                 if (!user.isPresent()) {
                     userRepository.save(aUser);
                 }
                 saveMessageToRepo(aUser, message);
                 break;
             case "following":
-                addUserToFollow(aUser,getSecondaryUserName(message));
+                followUser(aUser,getSecondaryUserName(message));
                 break;
             case "wall":
-                Optional<Wall> optionalWall = getWallForUser(aUser);
-                if(getWallForUser(aUser).isPresent()){
-                    Wall aWall = optionalWall.get();
-                    List<User> userList = aWall.isFollowing();
-                    List<Message> messageList = messageRepository.getMessagesForUser(aUser);
-                    for (User user1 : userList) {
-                       messageList.addAll(messageRepository.getMessagesForUser(user1));
-                    }
-                    messagePrinter.printForWall(messageList);
-                }
-
+                printWall(aUser);
                 break;
             case "timeline":
                 messagePrinter.printForTimeline(messageRepository.getMessagesForUser(aUser));
@@ -75,7 +68,7 @@ public class CommandHandler {
     }
 
     /*
-
+        Extracts a command from the user's message.
      */
     private String extractCommand(String message){
 
@@ -90,12 +83,11 @@ public class CommandHandler {
         if(message.contains("wall")){
             return "wall";
         }
-        // get message for a user
         return "timeline";
     }
 
     /*
-
+        Constructs a message and saves a message.
      */
     private void saveMessageToRepo(User aUser, String message){
         Message newMessage = new Message(aUser, getMessage(message), aClock.now());
@@ -103,7 +95,7 @@ public class CommandHandler {
     }
 
     /*
-
+        Extracts username from a message
      */
     private String getUserName(String message){
         String[] splitMessage;
@@ -115,6 +107,9 @@ public class CommandHandler {
         return splitMessage[0].trim();
     }
 
+    /*
+        Extracts a username from a "follows" command
+     */
     private String getSecondaryUserName(String message){
         String [] splitMessage;
         splitMessage = message.split(" ");
@@ -122,18 +117,24 @@ public class CommandHandler {
     }
 
     /*
-
+        Extracts a user's message from message supplied to commandHandler.
      */
     private String getMessage(String message){
         String[] splitMessage = message.split("->");
         return splitMessage[1].trim();
     }
 
+    /*
+        get a user's wall
+     */
     private Optional<Wall> getWallForUser(User aUser){
         return wallRepository.getWallForUser(aUser);
     }
 
-    private void addUserToFollow(User aUser, String following){
+    /*
+        Follow a user.
+     */
+    private void followUser(User aUser, String following){
         Wall aWall;
         Optional<Wall> optionalWall = wallRepository.getWallForUser(aUser);
 
@@ -146,7 +147,22 @@ public class CommandHandler {
 
         Optional<User> userOptional = userRepository.getUserByName(following);
         User followedUser = userOptional.get();
-        aWall.addUsersToFollow(followedUser);
+        aWall.followUser(followedUser);
+    }
 
+    /*
+        Prints a wall
+     */
+    private void printWall(User aUser){
+        Optional<Wall> optionalWall = getWallForUser(aUser);
+        if(getWallForUser(aUser).isPresent()){
+            Wall aWall = optionalWall.get();
+            List<User> userList = aWall.isFollowing();
+            List<Message> messageList = messageRepository.getMessagesForUser(aUser);
+            for (User user1 : userList) {
+                messageList.addAll(messageRepository.getMessagesForUser(user1));
+            }
+            messagePrinter.printForWall(messageList);
+        }
     }
 }

@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 
 public class WallRepositoryTest {
 
@@ -21,6 +23,6 @@ public class WallRepositoryTest {
         User aUser = new User("Alice");
         Wall aWall = new Wall(aUser);
         aWallRepository.addWall(aWall);
-        Assert.assertEquals(aWall,aWallRepository.getWallForUser(aUser).get());
+        assertEquals(aWall,aWallRepository.getWallForUser(aUser).get());
     }
 }

@@ -8,9 +8,6 @@ import java.util.List;
 import java.util.Optional;
 import static org.mockito.Mockito.*;
 
-/**
- * Unit tests for the CommandHandler.
- */
 public class CommandHandlerTest {
 
     private Clock aClock;
@@ -114,6 +111,6 @@ public class CommandHandlerTest {
         when(wallRepository.getWallForUser(aUserCharlie)).thenReturn(Optional.of(aWall));
         when(userRepository.getUserByName("Bob")).thenReturn(Optional.of(aUserBob));
         commandHandler.handle("Charlie follows Bob");
-        verify(aWall).addUsersToFollow(aUserBob);
+        verify(aWall).followUser(aUserBob);
     }
 }

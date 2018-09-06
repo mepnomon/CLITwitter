@@ -3,6 +3,10 @@ package CLITwitter;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
+/**
+ * A Clock object
+ * @author Dorian Dressler
+ */
 public class Clock {
 
     private final int ONE_DAY     = 24;
@@ -18,11 +22,17 @@ public class Clock {
     private final String FORMATTED_TIME = "(%d %s ago)";
 
 
+
     public LocalDateTime now() {
 
         return LocalDateTime.now();
     }
 
+    /**
+     * Selects appropriate methods to calculate a time offset displayed in a Message.
+     * @param postTime the time a post was made
+     * @return a formatted String with a time offset
+     */
     public String getTimeDifference(LocalDateTime postTime){
         Duration difference = Duration.between(LocalDateTime.now(),postTime);
         String durationString = difference.toString();
@@ -36,6 +46,9 @@ public class Clock {
         return formatSeconds(difference);
     }
 
+    /*
+      Returns a formatted String for Day(s)/Hour(s)
+     */
     private String formatHoursAndDays(Duration difference){
         String timeUnit;
         long diff = Math.abs(difference.toHours());
@@ -55,6 +68,9 @@ public class Clock {
         return String.format(FORMATTED_TIME,diff, timeUnit);
     }
 
+    /*
+        Returns a formatted String for Minute(s)
+     */
     private String formatMinutes(Duration difference){
         String timeUnit = MINUTES;
         long diff = Math.abs(difference.toMinutes());
@@ -64,6 +80,9 @@ public class Clock {
         return String.format(FORMATTED_TIME, diff,timeUnit);
     }
 
+    /*
+        Returns a formatted String for second(s)
+     */
     private String formatSeconds(Duration difference){
         String timeUnit = SECONDS;
         long diff = Math.abs(difference.getSeconds());

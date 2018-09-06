@@ -1,18 +1,30 @@
 package CLITwitter;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ */
 public class Wall {
 
     private User aUser;
     private List<User> followedUsers;
+
+    /**
+     * Constructs a wall
+     * @param aUser the owner of the wall
+     */
     public Wall(User aUser) {
         this.aUser = aUser;
         followedUsers = new ArrayList<>();
     }
 
+    /**
+     * Checks if wall belongs to user
+     * @param aUser
+     * @return true or false
+     */
     public boolean belongsTo(User aUser){
         return aUser == this.aUser;
     }
@@ -21,11 +33,19 @@ public class Wall {
         return aUser;
     }
 
+    /**
+     * List of Users followed by wall owner
+     * @return list of users
+     */
     public List<User> isFollowing() {
         return followedUsers;
     }
 
-    public void addUsersToFollow(User aUser) {
+    /**
+     * Follow a user
+     * @param aUser the User to follow.
+     */
+    public void followUser(User aUser) {
         followedUsers.add(aUser);
     }
 }

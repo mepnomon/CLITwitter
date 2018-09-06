@@ -1,23 +1,28 @@
 package CLITwitter;
 
-import java.util.List;
 import java.util.Objects;
 
+/**
+ * User object
+ * @author Dorian Dresler
+ */
 public class User {
     private String name;
 
+    /**
+     * Constructs a new user.
+     * @param name
+     */
     public User(String name) {
         this.name = name;
     }
 
+    /**
+     * Returns username
+     * @return the username
+     */
     public String getUserName(){
-
         return name;
-    }
-
-    public boolean isUser(User name){
-
-        return this.name.equals(name);
     }
 
     @Override
