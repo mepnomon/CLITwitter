@@ -2,6 +2,8 @@
 How to use:
 
 1. Clone the Repository
+2. in the parent folder (with the pom.xml) type mvn clean
+3. Followed by mvn install
 2. Navigate to "YourFolder"\out\artifacts\CoduranceTwitter_jar in your terminal
 3. type java -jar CoduranceTwitter.jar
 
