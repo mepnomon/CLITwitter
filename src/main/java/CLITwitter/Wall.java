@@ -46,6 +46,15 @@ public class Wall {
      * @param aUser the User to follow.
      */
     public void followUser(User aUser) {
-        followedUsers.add(aUser);
+        if(!userFollowed(aUser) && aUser != this.aUser) {
+            followedUsers.add(aUser);
+        }
+    }
+
+    /*
+      Returns true if a user is already being followed
+     */
+    private boolean userFollowed(User aUser){
+        return followedUsers.stream().anyMatch(user -> user.equals(aUser));
     }
 }

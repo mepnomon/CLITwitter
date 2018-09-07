@@ -7,5 +7,6 @@ CLITwitter\CommandHandlerTest$1.class
 CLITwitter\MessageRepositoryTest.class
 CLITwitter\CommandHandlerTest$2.class
 CLITwitter\WallRepositoryTest.class
+CLITwitter\WallTest.class
 CLITwitter\ClockTest.class
 CLITwitter\MessageRepositoryTest$1.class

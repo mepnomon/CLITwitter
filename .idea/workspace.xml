@@ -8,6 +8,25 @@
   <component name="ChangeListManager">
     <list default="true" id="67e99ef8-372f-44e7-bc8b-0fc4aef5b77d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CoduranceTwitter_jar/CoduranceTwitter.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CoduranceTwitter_jar/CoduranceTwitter.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CLITwitter/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CLITwitter/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CoduranceTwitter-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/CoduranceTwitter-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CLITwitter/Wall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CLITwitter/Wall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.ClockTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.ClockTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.CommandHandlerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.CommandHandlerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.MessagePrinterTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.MessagePrinterTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.MessageRepositoryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.MessageRepositoryTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.UserRepositoryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.UserRepositoryTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.WallRepositoryTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CLITwitter.WallRepositoryTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.ClockTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.ClockTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.CommandHandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.CommandHandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.MessagePrinterTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.MessagePrinterTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.MessageRepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.MessageRepositoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.UserRepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.UserRepositoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.WallRepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-CLITwitter.WallRepositoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Integration.IntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-Integration.IntegrationTest.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,7 +40,7 @@
     <session id="-2115102236">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
@@ -29,7 +48,7 @@
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.32" value="2" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.38" value="1" />
@@ -38,9 +57,9 @@
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -48,7 +67,7 @@
           <entry key="MF" value="1" />
           <entry key="class" value="29" />
           <entry key="iml" value="1" />
-          <entry key="java" value="194" />
+          <entry key="java" value="199" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -56,136 +75,74 @@
         <counts>
           <entry key="CLASS" value="29" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="194" />
+          <entry key="JAVA" value="199" />
           <entry key="Manifest" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="26873" />
+          <entry key="java" value="27588" />
           <entry key="xml" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="26873" />
+          <entry key="JAVA" value="27588" />
           <entry key="XML" value="65" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CLITwitter/WallRepositoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/MessagePrinter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/ConsoleHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-              <folding>
-                <element signature="e#91#92#0" expanded="true" />
-                <element signature="e#132#133#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CLITwitter/MessagePrinterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/Wall.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/MessageRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/Wall.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="523">
+                  <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#502#503#0" expanded="true" />
+                    <element signature="e#544#545#0" expanded="true" />
+                    <element signature="e#572#573#0" expanded="true" />
+                    <element signature="e#600#601#0" expanded="true" />
+                    <element signature="e#728#729#0" expanded="true" />
+                    <element signature="e#764#765#0" expanded="true" />
+                    <element signature="e#1042#1043#0" expanded="true" />
+                    <element signature="e#1124#1125#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/MessageRepository.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="459">
+                  <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -239,13 +196,14 @@
         <option value="$PROJECT_DIR$/src/main/java/CLITwitter/MessageRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/CLITwitter/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/CLITwitter/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CLITwitter/Wall.java" />
         <option value="$PROJECT_DIR$/src/test/java/CLITwitter/CommandHandlerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/CLITwitter/Clock.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/CLITwitter/MessagePrinterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/CLITwitter/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/CLITwitter/ConsoleHandler.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CLITwitter/WallTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CLITwitter/Wall.java" />
       </list>
     </option>
   </component>
@@ -271,17 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="CoduranceTwitter" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="CoduranceTwitter" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -361,10 +308,21 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="CoduranceTwitter" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="CoduranceTwitter" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536276731955" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536306042196" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -377,15 +335,15 @@
       <recent name="CLITwitter" />
       <recent name="doriand" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\CoduranceTwitter\src\main\resources" />
-      <recent name="C:\Projects\CoduranceTwitter\src\main\resources\META_INF" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="doriand" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="doriand" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\CoduranceTwitter\src\main\resources" />
+      <recent name="C:\Projects\CoduranceTwitter\src\main\resources\META_INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -400,7 +358,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.All in CoduranceTwitter">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CLITwitter.Main" />
       <module name="CoduranceTwitter" />
@@ -422,20 +380,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CoduranceTwitter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CLITwitter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CLITwitter" />
-      <option name="MAIN_CLASS_NAME" value="CLITwitter.ClockTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoduranceTwitter" />
       <extension name="coverage">
@@ -450,17 +394,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationTest.test_post_message" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WallTest.test_user_is_not_present" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CoduranceTwitter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Integration.*" />
+          <option name="PATTERN" value="CLITwitter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Integration" />
-      <option name="MAIN_CLASS_NAME" value="Integration.IntegrationTest" />
-      <option name="METHOD_NAME" value="test_post_message" />
+      <option name="PACKAGE_NAME" value="CLITwitter" />
+      <option name="MAIN_CLASS_NAME" value="CLITwitter.WallTest" />
+      <option name="METHOD_NAME" value="test_user_is_not_present" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WallTest.test_user_is_present" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CoduranceTwitter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CLITwitter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CLITwitter" />
+      <option name="MAIN_CLASS_NAME" value="CLITwitter.WallTest" />
+      <option name="METHOD_NAME" value="test_user_is_present" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -469,17 +429,17 @@
     <list>
       <item itemvalue="JUnit.All in CoduranceTwitter" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.IntegrationTest.test_post_message" />
-      <item itemvalue="JUnit.ClockTest" />
       <item itemvalue="JUnit.IntegrationTest" />
+      <item itemvalue="JUnit.WallTest.test_user_is_present" />
+      <item itemvalue="JUnit.WallTest.test_user_is_not_present" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in CoduranceTwitter" />
+        <item itemvalue="JUnit.WallTest.test_user_is_not_present" />
+        <item itemvalue="JUnit.WallTest.test_user_is_present" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.IntegrationTest" />
-        <item itemvalue="JUnit.All in CoduranceTwitter" />
-        <item itemvalue="JUnit.ClockTest" />
-        <item itemvalue="JUnit.IntegrationTest.test_post_message" />
       </list>
     </recent_temporary>
   </component>
@@ -497,18 +457,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IntegrationTest_test_post_message - 2018.09.05 at 22h 36m 10s.xml">
-      <configuration name="IntegrationTest.test_post_message" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CoduranceTwitter - 2018.09.05 at 22h 59m 02s.xml">
-      <configuration name="All in CoduranceTwitter" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CoduranceTwitter - 2018.09.05 at 22h 59m 36s.xml">
-      <configuration name="All in CoduranceTwitter" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_CoduranceTwitter - 2018.09.06 at 00h 06m 27s.xml">
-      <configuration name="All in CoduranceTwitter" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CommandHandlerTest_get_wall_for_a_user - 2018.09.06 at 00h 13m 11s.xml">
       <configuration name="CommandHandlerTest.get_wall_for_a_user" configurationId="JUnit" />
     </history-entry>
@@ -527,6 +475,18 @@
     <history-entry file="IntegrationTest - 2018.09.06 at 23h 48m 27s.xml">
       <configuration name="IntegrationTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="WallTest_test_user_is_present - 2018.09.07 at 08h 30m 58s.xml">
+      <configuration name="WallTest.test_user_is_present" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WallTest_test_user_is_present - 2018.09.07 at 08h 34m 39s.xml">
+      <configuration name="WallTest.test_user_is_present" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WallTest_test_user_is_not_present - 2018.09.07 at 08h 34m 44s.xml">
+      <configuration name="WallTest.test_user_is_not_present" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_CoduranceTwitter - 2018.09.07 at 08h 40m 08s.xml">
+      <configuration name="All in CoduranceTwitter" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,8 +499,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15031983" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15351813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -550,7 +511,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2516269" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2516269" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -806,7 +767,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -817,19 +778,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/Wall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="238">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -842,16 +793,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/MessageRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/ConsoleHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#91#92#0" expanded="true" />
+            <element signature="e#132#133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -868,7 +820,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/MessagePrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="459">
           <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -876,13 +828,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/ConsoleHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/CLITwitter/WallTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="459">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/MessageRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
           <folding>
-            <element signature="e#91#92#0" expanded="true" />
-            <element signature="e#132#133#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CLITwitter/Wall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
           </folding>
         </state>
       </provider>
